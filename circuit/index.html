@@ -27,10 +27,12 @@
         <h2 id="instructionsHeader">Loading...</h2>
         <br>
         <ul class="list-group" id="instructionsContainer">
-
+            <!-- This will contain the circuit instructions -->
         </ul>
     </div>
-    <div class="ht-30"></div>
+    <div class="ht-30">
+        <!-- Placeholder element so that the timerSection does not cover circuit content -->
+    </div>
     <br>
     <div id="timerSection" class="row ht-25 ihm-bg">
             <div class="col-9" id="timeCol">
@@ -43,15 +45,11 @@
     </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script> -->
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script> -->
 <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
         apiKey: "AIzaSyAtwxvMA4vCnN6uJiHy_o2nwVpFG_TNHhA",
-        // authDomain: "dublin-distance.firebaseapp.com",
-        // databaseURL: "https://dublin-distance.firebaseio.com",
         projectId: "dublin-distance",
         storageBucket: "dublin-distance.appspot.com",
         messagingSenderId: "721307459439",

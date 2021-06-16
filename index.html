@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IHM Viewer</title>
+    <style>
+    .ihm-bg {
+        background-color: #7C2831;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-dark ihm-bg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Circuits</a>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <ul class="list-group" id="listCategories">
+            <li id="loadingIndicator" class="list-group-item">
+                <span id="loadingText">Loading categories and circuits</span> <span id="loadingBar">...</span>
+            </li>
+        </ul>
+    </div>
+    <br>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script> -->
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAtwxvMA4vCnN6uJiHy_o2nwVpFG_TNHhA",
+    projectId: "dublin-distance",
+    storageBucket: "dublin-distance.appspot.com",
+    messagingSenderId: "721307459439",
+    appId: "1:721307459439:web:81849ece9df472f234d29a",
+    measurementId: "G-5VV382J1CR"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./js/circuitIndex.js"></script>
+</html>

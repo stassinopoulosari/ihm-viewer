@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/digital7mono.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading Circuit... - IHM Viewer</title>
+    <link rel="stylesheet" href="../css/circuitTimer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark ihm-bg">
+        <div class="container">
+            <a href=".." class="navbar-brand">&lt; Back</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <b class="navbar-brand" id="circuitName"></b>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <h2 id="instructionsHeader">Loading...</h2>
+        <br>
+        <ul class="list-group" id="instructionsContainer">
+
+        </ul>
+    </div>
+    <div class="ht-30"></div>
+    <br>
+    <div id="timerSection" class="row ht-25 ihm-bg">
+            <div class="col-9" id="timeCol">
+                <h1 id="timeLeft">0:00</h1>
+            </div>
+            <div class="col btn-group-vertical" id="mediaControlsGroup">
+                <button class="btn ihm-bg" id="playPauseButton">Play</button>
+                <button class="btn ihm-bg" id="skipButton">Skip</button>
+            </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script> -->
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAtwxvMA4vCnN6uJiHy_o2nwVpFG_TNHhA",
+        // authDomain: "dublin-distance.firebaseapp.com",
+        // databaseURL: "https://dublin-distance.firebaseio.com",
+        projectId: "dublin-distance",
+        storageBucket: "dublin-distance.appspot.com",
+        messagingSenderId: "721307459439",
+        appId: "1:721307459439:web:81849ece9df472f234d29a",
+        measurementId: "G-5VV382J1CR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="../js/console-circuits.js"></script>
+<script src="../js/circuitTimer.js"></script>
+</html>

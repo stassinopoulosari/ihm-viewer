@@ -1,0 +1,53 @@
+html {
+    background-color: #7C2831;
+}
+body {
+    background-color: #FFF;
+}
+.ihm-bg {
+    background-color: #7C2831;
+    color: white;
+}
+
+.ihm-bg:hover {
+    color: #E5E5E5;
+}
+
+.ht-25 {
+    height: 25vh;
+}
+.ht-30 {
+    height: 30vh;
+}
+#timerSection {
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+}
+#timeLeft {
+    font-size:20vh;
+    color: #FFF;
+    padding:0;
+    margin:0;
+    line-height:20vh;
+    height:20vh;
+    font-family: "Digital-7 Mono", monospace;
+}
+#timeCol {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+#mediaControlsGroup button {
+    font-size:5vh;
+}
+.timed-exercise-item {
+    cursor:pointer;
+}
+.timed-exercise-item:hover div {
+    text-decoration:underline;
+}
+.timed-exercise-item:not(.list-group-item-danger) {
+    background-color:#F0F0F0;
+}

@@ -33,6 +33,12 @@ body {
     line-height:20vh;
     height:20vh;
     font-family: "Digital-7 Mono", monospace;
+    text-align:center;
+}
+@media(max-width: 576px) {
+    #timeLeft {
+        font-size:20vw;
+    }
 }
 #timeCol {
     display:flex;
